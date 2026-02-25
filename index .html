@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS 練習</title>
+    <style>
+        .box01 {
+            /* 寬高 */
+            width: 400px;
+            height: 400px;
+
+            /* 背景 漸層 */
+            background: linear-gradient(180deg, #ffae00, #d60000);
+
+            /* 外距 */
+            margin-top: 50px;
+            margin-left: 50px;
+
+            /* 內距 */
+            padding: 50px;
+
+            /* 鎖住原本大小 */
+            box-sizing: border-box;
+
+            /* 外觀 */
+            border-radius: 10px;
+            box-shadow: 5px -5px 6px 2px #a12b00;
+
+            /* 文字相關 */
+            color: #f9f9f9;
+            font-size: 28px;
+            font-weight: bolder;
+            line-height: 1.6;
+            letter-spacing: 4px;
+
+            /* 設定hover的變化時間 */
+            transition: 
+                transform 0.7s, 
+                box-shadow 0.7s, 
+                color 0.7s, 
+                letter-spacing 0.7s,
+                background-color 10s;
+        }
+
+        .box01:hover {
+            /* 背景顏色變化 */
+            background: linear-gradient(180deg, #e40000, #b00000);
+
+            /* 位移 左右 +  上下 +  放大 + 旋轉 */
+            transform: translateX(5px) translateY(-5px) scale(1.05) rotate(-1deg);
+
+            /* 陰影加深 */
+            box-shadow: 5px -5px 12px 2px #d12b00;
+
+            /* 字變亮 */
+            color: #ffd700;
+
+            /* 字體間距 */
+            letter-spacing: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box01">
+        <p>蘋果免費電影新聞鈴聲下載她是加入時間理論水果作戰，信箱控制鄉民們回答不可以新。</p>
+    </div>
+</body>
+</html>
